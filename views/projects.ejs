@@ -4,19 +4,36 @@
     <title><%= title %></title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="/css/styles.css" />
+    <style>
+      .container {
+        max-width: 900px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+      .project-card {
+        border: 1px solid #ccc;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 8px;
+        background-color: #fff;
+      }
+    </style>
   </head>
   <body>
-    <h1><%= title %></h1>
-    <a href="/">← Back to Home</a>
+    <%- include('partials/navbar') %>
 
-    <div>
+    <div class="container">
+      <h1><%= title %></h1>
+
       <% projects.forEach(project => { %>
-        <div style="border: 1px solid #ccc; padding: 10px; margin: 10px 0;">
+        <div class="project-card">
           <h2><%= project.title %></h2>
           <p><strong>Description:</strong> <%= project.description %></p>
           <p><strong>Details:</strong> <%= project.details %></p>
         </div>
       <% }) %>
     </div>
+
+    <%- include('partials/footer') %>
   </body>
 </html>
