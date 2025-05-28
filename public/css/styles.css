@@ -1,19 +1,26 @@
-body {
-  font-family: Arial, sans-serif;
-  max-width: 800px;
-  margin: auto;
-  padding: 20px;
-  background-color: #fefefe;
-  color: #333;
+nav {
+  background: #2081C3;
+  color: white;
+  padding: 1rem;
+  width: 100%;
 }
-h1 {
-  font-size: 2rem;
+footer {
+  background: #f0f0f0;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+.project-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
   margin-bottom: 1rem;
-}
-a {
-  text-decoration: none;
-  color: #2081C3;
-}
-a:hover {
-  text-decoration: underline;
+  border-radius: 8px;
+  background-color: #fff;
 }
